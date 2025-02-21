@@ -2,43 +2,43 @@
 const Header = ({ addBack, products }) => {
   return (
     <div>
-      <div className="navbar bg-gray-700 shadow-sm px-4 flex justify-between">
-        <div className="flex  ">
-          <a className="btn btn-ghost text-3xl font-bold  text-white">MyCart</a>
+      <div className="navbar bg-gray-700 shadow-sm px-4 flex flex-col md:flex-row justify-between">
+        <div className="flex justify-center md:justify-start">
+          <a className="btn btn-ghost text-3xl font-bold text-white">MyCart</a>
         </div>
-        <div className="flex gap-4 pr-[4em]">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-4 md:pr-[4em]">
           <button
-            className="btn btn-primary rounded-2xl w-[5em]  "
+            className="btn btn-primary rounded-2xl w-[5em]"
             onClick={() => addBack(0)}
           >
             shipsy
           </button>
           <button
-            className="btn btn-primary rounded-2xl w-[5em] "
+            className="btn btn-primary rounded-2xl w-[5em]"
             onClick={() => addBack(1)}
           >
             pepsi
           </button>
           <button
-            className="btn btn-primary rounded-2xl w-[5em] "
+            className="btn btn-primary rounded-2xl w-[5em]"
             onClick={() => addBack(2)}
           >
             molto
           </button>
           <button
-            className="btn btn-primary rounded-2xl w-[5em] "
+            className="btn btn-primary rounded-2xl w-[5em]"
             onClick={() => addBack(3)}
           >
             kranchy
           </button>
           <button
-            className="btn btn-primary rounded-2xl w-[5em] "
+            className="btn btn-primary rounded-2xl w-[5em]"
             onClick={() => addBack(4)}
           >
             cigaretes
           </button>
         </div>
-        <div className="flex">
+        <div className="flex justify-center md:justify-end mt-4 md:mt-0">
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
