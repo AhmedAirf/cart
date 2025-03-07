@@ -55,7 +55,7 @@ const Items = ({ products, add, remove, del, reset, delCart }) => {
         </div>
       ) : (
         <>
-          <h1 className="text-4xl text-blue-950 font-bold dark:text-white">
+          <h1 className="text-4xl text-indigo-700 font-bold dark:text-white">
             Your Cart
           </h1>
 
@@ -104,7 +104,7 @@ const Items = ({ products, add, remove, del, reset, delCart }) => {
             />
           ))}
 
-          <h1 className="text-5xl text-blue-950 font-bold mt-4">
+          <h1 className="text-5xl text-indigo-700 font-bold mt-4">
             Total Paid = {totalPaid}
           </h1>
         </>
